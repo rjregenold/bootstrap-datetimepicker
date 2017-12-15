@@ -715,7 +715,7 @@
                 currentDate = viewDate.clone().startOf('M').startOf('w').startOf('d');
 
                 for (i = 0; i < 42; i++) { //always display 42 days (should show 6 weeks)
-                    if (currentDate.weekday() === 0) {
+                    if (i % 7 === 0) {
                         row = $('<tr>');
                         if (options.calendarWeeks) {
                             row.append('<td class="cw">' + currentDate.week() + '</td>');
