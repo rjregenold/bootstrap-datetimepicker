@@ -51,9 +51,10 @@ module.exports = function (grunt) {
                 'strict': true,
                 'unused': true,
                 'white': true,
-                'es3': true,
+                // 'es3': true,
                 'camelcase': true,
                 'quotmark': 'single',
+                'esversion': 6,
                 'globals': {
                     'define': false,
                     'moment': false,
